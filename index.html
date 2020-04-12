@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <!-- 引入Font Awesome -->
+  <script src="https://kit.fontawesome.com/863c1ba1db.js" crossorigin="anonymous"></script>
+  <!--引入自己的CSS-->
+  <link rel="stylesheet" href="style.css">
+  <title>社群名單</title>
+  <!--引入axios-->
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+  <!-- Image and text -->
+  <nav class="navbar navbar-light bg-light">
+    <div class="div meet-friends">
+      <a class="navbar-brand" href="#">
+        <img src="https://purepng.com/public/uploads/medium/heart-icon-s4k.png" width="30" height="30"
+          class="d-inline-block align-top" alt="">
+        Meet friends
+      </a>
+    </div>
+    <!-- 篩選性別 -->
+    <div class="div select-gender">
+      <div class="custom-control custom-radio custom-control-inline">
+
+        <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
+
+        <label class="custom-control-label for-male" for="customRadioInline1">Male<i class="fas fa-male"></i>
+
+        </label>
+
+      </div>
+      <div class="custom-control custom-radio custom-control-inline">
+        <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
+        <label class="custom-control-label for-female" for="customRadioInline2">Female<i
+            class="fas fa-female"></i></label>
+      </div>
+    </div>
+  </nav>
+  <!-- 畫面滑動的部分 -->
+  <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-interval="10000">
+        <img src="https://image.freepik.com/free-vector/alphabet-letters-with-watercolor-flowers_25819-466.jpg"
+          class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item" data-interval="2000">
+        <img src="https://image.freepik.com/free-vector/pink-heart-cut-out-from-paper_185757-7.jpg"
+          class="d-block w-100" alt="...">
+      </div>
+
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+  <!-- 動態渲染的部分 -->
+  <!--search bar-->
+  <div class="row" id="search-bar">
+    <form id="search" class="form-inline">
+      <label class="sr-only" for="inlineFormInputName2">Name</label>
+      <input type="text" class="form-control mb-2 mr-sm-2" id="search-input" placeholder="想認識幾歲的他/她 ...">
+      <button type="submit" class="btn btn-primary mb-2">Search</button>
+    </form>
+  </div>
+  <div id="data-panel" class="card-deck">
+
+    <!--data goes here -->
+  </div>
+  <nav aria-label="Page navigation">
+    <ul class="pagination justify-content-center" id="pagination">
+      <li class="page-item">
+        <a class="page-link" href="#">1</a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel"></h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+  <script src="main.js"></script>
+</body>
+
+</html>

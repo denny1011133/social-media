@@ -1,0 +1,16 @@
+body {
+  background-color: pink !important;
+}
+
+.col-sm-4 {
+  padding: 40px;
+}
+.fas {
+  padding-left: 10px;
+}
+
+#search-bar {
+  padding-top: 25px;
+  padding-left: 25px;
+}
+
